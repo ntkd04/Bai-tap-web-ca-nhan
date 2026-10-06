@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân của Nguyễn Trần Khánh Duy - Sinh viên Vật lý kỹ thuật, định hướng Automation Tester.">
+    <title>Nguyễn Trần Khánh Duy - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+</head>
+<body>
+
+    <header class="site-header container">
+        <a href="#" class="logo">Khánh Duy</a>
+
+        <nav class="site-nav" aria-label="Điều hướng chính">
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" type="button" title="Bật/tắt chế độ tối">🌙</button>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">PORTFOLIO CÁ NHÂN</p>
+                <h1>Nguyễn Trần Khánh Duy</h1>
+                <p class="subtitle">Sinh viên năm 4 · Định hướng: Web Development</p>
+
+                <p class="status-badge">
+                    <span class="dot"></span>
+                    Đang tìm cơ hội thực tập/ Dự án freelance
+                </p>
+
+                <p>
+                    Tôi là sinh viên ngành Vật lý - Vật lý kỹ thuật, chuyên ngành Vật lý tin học tại Trường Đại học Khoa học Tự nhiên, ĐHQGTPHCM. 
+                    Tôi có niềm đam mê với việc thiết kế và phát triển giao diện web sử dụng HTML, CSS và JavaScript. Mục tiêu của tôi là phát triển sâu trong lĩnh vực web, đặc biệt là Web Development.
+                </p>
+
+                <a href="#contact" class="button">Liên hệ với tôi</a>
+            </div>
+
+            <img src="avatar.jpg" alt="Chân dung Nguyễn Trần Khánh Duy" class="profile-img" width="400" height="400">
+        </section>
+
+        <section id="skills" class="section">
+            <p class="eyebrow">NĂNG LỰC</p>
+            <h2>Kỹ năng cốt lõi</h2>
+            <p>Các ngôn ngữ và công cụ tôi đang sử dụng trong quá trình học tập.</p>
+
+            <ul class="tags">
+                <li>C++</li>
+                <li>Python</li>
+                <li>MATLAB / Simulink</li>
+                <li>Proteus</li>
+                <li>JavaScript</li>
+                <li>Omron CX-One</li>
+            </ul></section>
+
+        <section id="projects" class="section">
+            <p class="eyebrow">SẢN PHẨM</p>
+            <h2>Dự án thực tế</h2>
+            <p>Danh sách dự án được tạo từ dữ liệu JavaScript. Có thể tìm kiếm và lọc theo công nghệ.</p>
+
+            <div class="project-tools">
+                <input id="search" type="search" placeholder="Tìm dự án theo tên...">
+                <div id="filters"></div>
+            </div>
+
+            <p id="project-count" class="project-count"></p>
+
+            <ul id="project-list" class="project-grid"></ul>
+
+            <p id="empty-state" class="empty-state" hidden>Không có dự án phù hợp với bộ lọc hiện tại.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <p class="eyebrow">KẾT NỐI</p>
+            <h2>Liên hệ</h2>
+            <p>Nếu bạn muốn trao đổi về công việc, dự án hoặc cơ hội hợp tác, hãy gửi lời nhắn.</p>
+
+            <form id="contact-form" novalidate>
+                <div class="field">
+                     <label for="name">Họ tên</label>
+                     <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                     <label for="email">Email</label>
+                     <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                     <label for="msg">Lời nhắn</label>
+                     <textarea id="msg" name="msg" rows="5" autocomplete="off" required></textarea>
+                </div>
+
+                <button class="button" type="submit">Gửi lời nhắn</button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <h2>Kết nối với tôi</h2>
+        <div class="footer-links">
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="copyright">© 2026 Nguyễn Trần Khánh Duy</p>
+    </footer>
+
+    <template id="project-card">
+        <li class="card">
+            <h3></h3>
+            <p class="card-meta"></p>
+            <div class="card-tags"></div>
+        </li>
+    </template>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
